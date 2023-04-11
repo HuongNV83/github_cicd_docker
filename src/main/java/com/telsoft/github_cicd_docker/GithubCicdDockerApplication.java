@@ -13,6 +13,11 @@ public class GithubCicdDockerApplication {
         return "Xin chao!";
     }
 
+    @GetMapping("/hello")
+    public String getMessage1() {
+        return "Xin chao, HuongNV!";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(GithubCicdDockerApplication.class, args);
     }
